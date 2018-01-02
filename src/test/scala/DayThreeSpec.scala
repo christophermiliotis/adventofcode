@@ -36,4 +36,10 @@ class DayThreeSpec extends FlatSpec with Matchers {
   it should "calculate the steps for the puzzle input" in {
     DayThree.numOfSteps(325489, 400000) shouldBe 552
   }
+
+  behavior of "Part Two"
+
+  it should "calculate the next larger value" in {
+    DayThreePartTwo.sumOfValues(325489) shouldBe 330785
+  }
 }
